@@ -1,0 +1,8 @@
+name: test gitactions
+run-name: test gitactions
+on: [push]
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world"
