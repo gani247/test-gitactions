@@ -5,5 +5,11 @@ jobs:
   explore:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world"
-      - run: echo "this is ${{ github.actor }}"
+      - name: hello world
+        run: echo "hello world"
+      - name: who is the actor
+        run: echo "this is ${{ github.actor }}"
+      - name: multi-line script
+        run: |
+          echo "this script runs in"
+          echo "mulitple lines"
